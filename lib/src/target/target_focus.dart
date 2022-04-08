@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
-import 'package:tutorial_coach_mark/src/target/target_content.dart';
-import 'package:tutorial_coach_mark/src/target/target_position.dart';
-import 'package:tutorial_coach_mark/src/util.dart';
+import 'package:tour_package_meet/src/target/target_content.dart';
+import 'package:tour_package_meet/src/target/target_position.dart';
+import 'package:tour_package_meet/src/util.dart';
 
 class TargetFocus {
   TargetFocus({

@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
-import 'package:tutorial_coach_mark/src/target/target_focus.dart';
-import 'package:tutorial_coach_mark/src/target/target_position.dart';
+import 'package:tour_package_meet/src/target/target_focus.dart';
+import 'package:tour_package_meet/src/target/target_position.dart';
 
 enum ShapeLightFocus { Circle, RRect }
 

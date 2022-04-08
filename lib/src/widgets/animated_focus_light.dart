@@ -2,11 +2,11 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:tutorial_coach_mark/src/paint/light_paint.dart';
-import 'package:tutorial_coach_mark/src/paint/light_paint_rect.dart';
-import 'package:tutorial_coach_mark/src/target/target_focus.dart';
-import 'package:tutorial_coach_mark/src/target/target_position.dart';
-import 'package:tutorial_coach_mark/src/util.dart';
+import 'package:tour_package_meet/src/paint/light_paint.dart';
+import 'package:tour_package_meet/src/paint/light_paint_rect.dart';
+import 'package:tour_package_meet/src/target/target_focus.dart';
+import 'package:tour_package_meet/src/target/target_position.dart';
+import 'package:tour_package_meet/src/util.dart';
 
 class AnimatedFocusLight extends StatefulWidget {
   final List<TargetFocus> targets;

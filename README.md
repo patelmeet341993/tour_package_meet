@@ -16,7 +16,7 @@ To use this plugin, add `tutorial_coach_mark` as a [dependency in your pubspec.y
 
 ``` dart
 import 'package:flutter/material.dart';
-import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
+import 'package:tour_package_meet/tutorial_coach_mark.dart';
 
 void showTutorial() {
     TutorialCoachMark tutorial = TutorialCoachMark(
@@ -87,7 +87,7 @@ Attributes:
 
 ``` dart
 import 'package:flutter/material.dart';
-import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
+import 'package:tour_package_meet/tutorial_coach_mark.dart';
 
 List<TargetFocus> targets = List();
 

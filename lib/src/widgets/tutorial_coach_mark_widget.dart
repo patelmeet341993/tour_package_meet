@@ -1,10 +1,10 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:tutorial_coach_mark/src/target/target_content.dart';
-import 'package:tutorial_coach_mark/src/target/target_focus.dart';
-import 'package:tutorial_coach_mark/src/util.dart';
-import 'package:tutorial_coach_mark/src/widgets/animated_focus_light.dart';
+import 'package:tour_package_meet/src/target/target_content.dart';
+import 'package:tour_package_meet/src/target/target_focus.dart';
+import 'package:tour_package_meet/src/util.dart';
+import 'package:tour_package_meet/src/widgets/animated_focus_light.dart';
 
 class TutorialCoachMarkWidget extends StatefulWidget {
   const TutorialCoachMarkWidget({

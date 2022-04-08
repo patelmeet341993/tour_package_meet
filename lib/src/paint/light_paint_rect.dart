@@ -2,7 +2,7 @@ import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:tutorial_coach_mark/src/target/target_position.dart';
+import 'package:tour_package_meet/src/target/target_position.dart';
 
 class LightPaintRect extends CustomPainter {
   final double progress;

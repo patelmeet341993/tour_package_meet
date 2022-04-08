@@ -1,15 +1,15 @@
-library tutorial_coach_mark;
+library tour_package_meet;
 
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:tutorial_coach_mark/src/target/target_focus.dart';
-import 'package:tutorial_coach_mark/src/widgets/tutorial_coach_mark_widget.dart';
+import 'package:tour_package_meet/src/target/target_focus.dart';
+import 'package:tour_package_meet/src/widgets/tutorial_coach_mark_widget.dart';
 
-export 'package:tutorial_coach_mark/src/target/target_content.dart';
-export 'package:tutorial_coach_mark/src/target/target_focus.dart';
-export 'package:tutorial_coach_mark/src/target/target_position.dart';
-export 'package:tutorial_coach_mark/src/util.dart';
+export 'package:tour_package_meet/src/target/target_content.dart';
+export 'package:tour_package_meet/src/target/target_focus.dart';
+export 'package:tour_package_meet/src/target/target_position.dart';
+export 'package:tour_package_meet/src/util.dart';
 
 class TutorialCoachMark {
   final BuildContext _context;
@@ -55,24 +55,26 @@ class TutorialCoachMark {
   OverlayEntry _buildOverlay() {
     return OverlayEntry(
       builder: (context) {
-        return TutorialCoachMarkWidget(
-          key: _widgetKey,
-          targets: targets,
-          clickTarget: onClickTarget,
-          clickOverlay: onClickOverlay,
-          paddingFocus: paddingFocus,
-          onClickSkip: skip,
-          alignSkip: alignSkip,
-          skipWidget: skipWidget,
-          textSkip: textSkip,
-          textStyleSkip: textStyleSkip,
-          hideSkip: hideSkip,
-          colorShadow: colorShadow,
-          opacityShadow: opacityShadow,
-          focusAnimationDuration: focusAnimationDuration,
-          pulseAnimationDuration: pulseAnimationDuration,
-          pulseEnable: pulseEnable,
-          finish: finish,
+        return SafeArea(
+          child: TutorialCoachMarkWidget(
+            key: _widgetKey,
+            targets: targets,
+            clickTarget: onClickTarget,
+            clickOverlay: onClickOverlay,
+            paddingFocus: paddingFocus,
+            onClickSkip: skip,
+            alignSkip: alignSkip,
+            skipWidget: skipWidget,
+            textSkip: textSkip,
+            textStyleSkip: textStyleSkip,
+            hideSkip: hideSkip,
+            colorShadow: colorShadow,
+            opacityShadow: opacityShadow,
+            focusAnimationDuration: focusAnimationDuration,
+            pulseAnimationDuration: pulseAnimationDuration,
+            pulseEnable: pulseEnable,
+            finish: finish,
+          ),
         );
       },
     );
