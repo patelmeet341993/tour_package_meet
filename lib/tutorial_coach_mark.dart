@@ -55,29 +55,26 @@ class TutorialCoachMark {
   OverlayEntry _buildOverlay() {
     return OverlayEntry(
       builder: (context) {
-        return SafeArea(
-           bottom: true,
-          child: Padding(
-            padding: EdgeInsets.only(bottom: 50),
-            child: TutorialCoachMarkWidget(
-              key: _widgetKey,
-              targets: targets,
-              clickTarget: onClickTarget,
-              clickOverlay: onClickOverlay,
-              paddingFocus: paddingFocus,
-              onClickSkip: skip,
-              alignSkip: alignSkip,
-              skipWidget: skipWidget,
-              textSkip: textSkip,
-              textStyleSkip: textStyleSkip,
-              hideSkip: hideSkip,
-              colorShadow: colorShadow,
-              opacityShadow: opacityShadow,
-              focusAnimationDuration: focusAnimationDuration,
-              pulseAnimationDuration: pulseAnimationDuration,
-              pulseEnable: pulseEnable,
-              finish: finish,
-            ),
+        return Padding(
+          padding: EdgeInsets.only(top: 50),
+          child: TutorialCoachMarkWidget(
+            key: _widgetKey,
+            targets: targets,
+            clickTarget: onClickTarget,
+            clickOverlay: onClickOverlay,
+            paddingFocus: paddingFocus,
+            onClickSkip: skip,
+            alignSkip: alignSkip,
+            skipWidget: skipWidget,
+            textSkip: textSkip,
+            textStyleSkip: textStyleSkip,
+            hideSkip: hideSkip,
+            colorShadow: colorShadow,
+            opacityShadow: opacityShadow,
+            focusAnimationDuration: focusAnimationDuration,
+            pulseAnimationDuration: pulseAnimationDuration,
+            pulseEnable: pulseEnable,
+            finish: finish,
           ),
         );
       },
