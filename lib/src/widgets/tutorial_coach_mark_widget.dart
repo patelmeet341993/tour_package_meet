@@ -189,10 +189,10 @@ class TutorialCoachMarkWidgetState extends State<TutorialCoachMarkWidget>
       }
 
       return Positioned(
-        top: top,
-        bottom: bottom,
-        left: left,
-        right: right,
+        top: top==null?null:(top!+currentTarget!.marginTop),
+        bottom: bottom==null?null:(bottom!+currentTarget!.marginBottom),
+        left: left==null?null:(left!+currentTarget!.marginLeft),
+        right: right==null?null:(right!+currentTarget!.marginRight),
         child: Container(
           width: weight,
           child: Padding(

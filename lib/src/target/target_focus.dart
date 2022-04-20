@@ -19,6 +19,11 @@ class TargetFocus {
     this.paddingFocus,
     this.focusAnimationDuration,
     this.pulseVariation,
+    this.marginBottom=0,
+    this.marginLeft=0,
+    this.marginRight=0,
+    this.marginTop=0
+
   }) : assert(keyTarget != null || targetPosition != null);
 
   final dynamic identify;
@@ -35,6 +40,12 @@ class TargetFocus {
   final double? paddingFocus;
   final Duration? focusAnimationDuration;
   final Tween<double>? pulseVariation;
+  final double marginTop;
+  final double marginBottom;
+  final double marginLeft;
+  final double marginRight;
+
+
 
   @override
   String toString() {
