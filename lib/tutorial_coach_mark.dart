@@ -56,6 +56,7 @@ class TutorialCoachMark {
     return OverlayEntry(
       builder: (context) {
         return SafeArea(
+           bottom: false,
           child: TutorialCoachMarkWidget(
             key: _widgetKey,
             targets: targets,
