@@ -197,7 +197,8 @@ class AnimatedStaticFocusLightState extends AnimatedFocusLightState {
                       ? () => _tapHandler(targetTap: true)
                       : null,
                   child: Container(
-                    color: Colors.transparent,
+                    color: Colors.red,
+                    child: Text("${_targetFocus.marginTop}"),
                     width: (_targetPosition?.size.width ?? 0) +
                         _getPaddingFocus() * 4,
                     height: (_targetPosition?.size.height ?? 0) +
