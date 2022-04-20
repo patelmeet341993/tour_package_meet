@@ -75,9 +75,11 @@ class TutorialCoachMarkWidgetState extends State<TutorialCoachMarkWidget>
             pulseVariation: widget.pulseVariation,
             pulseEnable: widget.pulseEnable,
             clickTarget: (target) {
+              print("click target");
               return widget.clickTarget?.call(target);
             },
             clickOverlay: (target) {
+              print("click overlay");
               return widget.clickOverlay?.call(target);
             },
             focus: (target) {
@@ -227,7 +229,8 @@ class TutorialCoachMarkWidgetState extends State<TutorialCoachMarkWidget>
               child: IgnorePointer(
                 child: widget.skipWidget ??
                     Text(
-                      widget.textSkip,
+                      //widget.textSkip,
+                      "Cancel",
                       style: widget.textStyleSkip,
                     ),
               ),

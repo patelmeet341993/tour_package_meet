@@ -189,7 +189,8 @@ class AnimatedStaticFocusLightState extends AnimatedFocusLightState {
                 ),
               ),
               Positioned(
-                left: ((_targetPosition?.offset.dx ?? 0) - _getPaddingFocus() * 2)+_targetFocus.marginLeft,
+                left:
+                ((_targetPosition?.offset.dx ?? 0) - _getPaddingFocus() * 2)+_targetFocus.marginLeft,
                 top: ((_targetPosition?.offset.dy ?? 0) - _getPaddingFocus() * 2)+_targetFocus.marginTop,
                 child: InkWell(
                   borderRadius: _betBorderRadiusTarget(),
@@ -197,8 +198,7 @@ class AnimatedStaticFocusLightState extends AnimatedFocusLightState {
                       ? () => _tapHandler(targetTap: true)
                       : null,
                   child: Container(
-                    color: Colors.red,
-                    child: Text("${_targetFocus.marginTop}"),
+                    color: Colors.transparent,
                     width: (_targetPosition?.size.width ?? 0) +
                         _getPaddingFocus() * 4,
                     height: (_targetPosition?.size.height ?? 0) +
