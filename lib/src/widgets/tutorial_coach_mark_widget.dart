@@ -229,8 +229,7 @@ class TutorialCoachMarkWidgetState extends State<TutorialCoachMarkWidget>
               child: IgnorePointer(
                 child: widget.skipWidget ??
                     Text(
-                      //widget.textSkip,
-                      "Cancel",
+                      widget.textSkip,
                       style: widget.textStyleSkip,
                     ),
               ),
